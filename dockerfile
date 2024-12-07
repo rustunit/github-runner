@@ -23,6 +23,7 @@ RUN apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /usr/var/bin
+RUN just 1.37.0
 
 # Copy the start script and make it executable
 COPY start.sh /start.sh
