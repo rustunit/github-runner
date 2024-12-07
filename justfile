@@ -1,6 +1,6 @@
 
 IMAGE_NAME:="ghcr.io/rustunit/github-runner"
-IMAGE_TAG:="0.1.0"
+IMAGE_TAG:="0.1.1"
 
 build:
     docker build -t {{IMAGE_NAME}}:latest .
