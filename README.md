@@ -11,3 +11,5 @@ This runner is build to be used on an organizational level, you need to provide 
 $ORGANIZATION
 $ACCESS_TOKEN
 ```
+
+Use the image as `ghcr.io/rustunit/github-runner`
