@@ -1,0 +1,17 @@
+name: ci
+
+on:
+  pull_request:
+
+jobs:
+  build_runner:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: extractions/setup-just@v1
+      - name: Docker build
+        run: just build
